@@ -1,0 +1,102 @@
+// 01 EJERCICIOS OPERADORES
+
+
+// Ejercicio 1: Calcula el perímetro y el área de un rectángulo, dada su base y su altura
+var base = 2
+var altura = 3
+var perimetro = 2 * base + 2 * altura
+var area = base * altura
+print("EJERCICIO 1")
+print("Perímetro: ", perimetro)
+print("Área: ", area)
+
+
+// Ejercicio 2: Dados los catetos de un triángulo rectángulo, calcular su hipotenusa
+var cateto1 : Double = 5
+var cateto2 : Double = 7
+var hipotenusa : Double = sqrt(pow(cateto1, 2) + pow(cateto2, 2))
+print("\nEJERCICIO 2")
+print("Hipotenusa: ", hipotenusa)
+
+
+// Ejercicio 3: Dados dos números, mostrar la suma, resta, división y multiplicación de ambos
+var num1 = 11
+var num2 = 13
+print("\nEJERCICIO 3")
+print("Suma: ", (num1 + num2))
+print("Resta: ", (num1 - num2))
+print("Multiplicación: ", (num1 * num2))
+print("División: ", (num1 / num2))
+
+
+// Ejercicio 4: Escribir un programa que convierta un valor dado en grados Farenheit a grados Celsius
+var farenheit = 17
+var celsius = (farenheit - 32) * 5 / 9
+print("\nEJERCICIO 4")
+print("Farenheit: ", farenheit, " - Celsius ", celsius)
+
+
+// Ejercicio 5: Calcular la media de 3 números dados por teclado
+var num1 : Double = 19
+var num2 : Double = 23
+var num3 : Double = 29
+var media = (num1 + num2 + num3) / 3
+print("\nEJERCICIO 5")
+print("Media: ", media)
+
+
+// Ejercicio 6: Un vendedor recibe un sueldo base mas un 10% extra por comision de sus ventas,
+// el vendedor desea saber cuanto dinero obtendrá por concepto de comisiones por las tres ventas 
+// que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.
+var sueldoBase : Double = 1900
+var venta1 : Double = 310
+var venta2 : Double = 410
+var venta3 : Double = 430
+var comision1 = venta1 * 1.1
+var comision2 = venta2 * 1.1
+var comision3 = venta3 * 1.1
+var comision = comision1  + comision2 + comision3
+var sueldoFinal : Double = sueldoBase + comision
+
+print("\nEJERCICIO 6")
+print("Sueldo base: ", sueldoBase)
+print("Comisión: ", comision)
+print("Sueldo final: ", sueldoFinal)
+
+
+
+// Ejercicio 7: Un alumno desea saber cual será su calificación final en la materia de IOS.    
+// Dicha calificación se compone de los siguientes porcentajes:    
+// * 55% del promedio de sus tres calificaciones parciales.    
+// * 30% de la calificación del examen final.    * 15% de la calificación de un trabajo final.
+var parcial1 : Double = 4.7
+var parcial2 : Double = 5.3
+var parcial3 : Double = 5.9
+var promedio : Double = (parcial1 + parcial2 + parcial3) / 3
+var examenFinal : Double = 6.1
+var trabajoFinal : Double = 6.7
+var notaFinal = (promedio * 0.55) + (examenFinal * 0.3) + (trabajoFinal * 0.15)
+print("\nEJERCICIO 7")
+print("Nota final: ", notaFinal)
+
+
+// Ejercicio 8: Escribir un algoritmo para calcular la nota final de un estudiante, considerando que:    
+// por cada respuesta correcta 5 puntos, por una incorrecta -1 y por respuestas en    
+// blanco 0. Imprime el resultado obtenido por el estudiante.
+var resCorrect = 71
+var resIncorr = 23
+var resNull = 6
+var resultado = (resCorrect * 5) + (resIncorr * -1) + (resNull * 0)
+print("\nEJERCICIO 7")
+print("\nPuntuación Final: resultado 
+
+
+// Ejercicio 9: Calcula el sueldo de un trabajador, cuyo valor es su sueldo base más un numero de 
+// horas extra trabajadas, pero teniendo en cuenta que el dicho numero de horas puede ser nulo
+var sueldoBase : Double = 2400
+var horasExtra : Double? = 8
+let precioHora = 80
+var sueldoExtra = precioHora * (horasExtra ?? 0) 
+var sueldoFinal = sueldoBase + sueldoExtra
+print("\nEJERCICIO 9")
+print("Sueldo Final: ", sueldoFinal)
